@@ -5,7 +5,9 @@ import { Button, Card } from './components'
 function App() {
 
 	return (
-		<TonConnectUIProvider manifestUrl="https://localhost:5173/tonconnect-manifest.json">
+		<TonConnectUIProvider manifestUrl="https://cryptosubscriptions.github.io/frontend-TWA/tonconnect-manifest.json" actionsConfiguration={{
+			twaReturnUrl: 'https://t.me/value_manager_bot/con_market'
+		}}>
 			<header>
 				<TonConnectButton />
 			</header>
