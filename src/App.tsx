@@ -1,5 +1,6 @@
 import './App.css'
 import { TonConnectButton, TonConnectUIProvider } from '@tonconnect/ui-react'
+import { Button, Card } from './components'
 
 function App() {
 
@@ -9,7 +10,9 @@ function App() {
 				<TonConnectButton />
 			</header>
 			<main>
-
+				<Card imgSrc='/banshee.jpg'>
+					<Button>Buy</Button>
+				</Card>
 			</main>
 		</TonConnectUIProvider>
 	)
